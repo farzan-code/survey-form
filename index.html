@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css"> 
         <title>School Servey Form</title>
     </head>
 <header>
@@ -8,27 +9,51 @@
 <p id="description">let us know about you </p>
 </header>
 <body>
+    
     <form id="survey-form">
-      
-  <label id="name-label">Name </label>
+  
+  <label id="name-label" for="name">Name </label>
   <input id="name" type="text" placeholder="Enter Your Name" required><br>
-  <label id="email-label">Email </label>
+  <label id="email-label" for="email">Email </label>
   <input id="email" type="email" placeholder="Enter Your Email" required><br>
-  <label id="number-label">(Optional) Age </label>
+  <label id="number-label" for="number">(Optional) Age </label>
   <input id="number" type="number" placeholder="Age" min="10" max="20" >
 
-  <br> <label for='dropdown'>Select your field :</label>
+  <br> 
+  
+  <label for='dropdown'>Select your field :</label>
   <select id='dropdown' >
     <option disabled selected value>Select Field</option>
     <option value='Web technology'>Web technology</option>
     <option value='Networking'>Networking</option>
     <option value='data science'>Data science</option>
 </select>
+
+<p>How Long Would You Like To Study With Us ? :</p>
     <div id="radio">
-      <p>HOW LONG YOU WOULD LIKE TO STUDY WITH US ? :</p>
-      <label><input name="period" value="1 year" type="radio" class="input-radio" checked >1 Year</label>
+      <label> <input name="period" value="1 year" type="radio" class="input-radio" checked >1 Year</label>
+      <label> <input name="period" value="2 years" type="radio" class="input-radio">2 Years</label>
+      <label><input name="period" value="3 years" type="radio" class="input-radio"> 3 Years </label>
    </div>
+   <p>Which Learning Style Do You Prefer :</p>
+  <div id="check">
+    <label for="a"><input type="checkbox" name='lt' id ='a' value='self-learning'>SELF-LEARNING</label>
+     <label for='b'><input type="checkbox" name='lt' id ='b' value='learning with teacher'>LEARNING WITH TEACHER</label>
+     <label for='c'><input type="checkbox" name='lt' id ='c' value='group learning'>GROUP LEARNING</label>
+    <label for='d'><input type="checkbox" name='lt' id ='d' value='onlign learning'>ONLIGN LEARNING</label>
+    <label for='c'><input type="checkbox" name='lt' id ='c' value='private learning'>PRIVATE LEARNING</label>
+  </div>
+  <br>
+  <label target>Tell Us More About Yourself: </label>
+  <br>
+  <textarea placeholder='enter any comments or suggestion here'></textarea>
+  <br>
+  <input type='submit' id='submit'>
+  
     </form>
- 
+
+
 </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </html>
