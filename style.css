@@ -20,7 +20,7 @@ body {
 
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px); 
-    width: 90%;
+    width: 50%;
     padding-top: 40px;
     margin: auto;
     justify-items: center;
@@ -65,5 +65,26 @@ body {
     font-size: 1.125rem;
     margin-bottom: 0.5rem;
   }
+  #name{
+    width: 80%;
+    height: 30px;
+    margin: 5px;
+  }
+  #email{
+    width: 80%;
+    height: 30px;
+    margin: 5px;
+  }
+  #number{
+    width: 70%;
+    height: 30px;
+    margin: 5px;
+  }
+  #dropdown{
+    width: 68%;
+    height: 35px;
+    margin: 5px;
+  }
+ 
  
 
